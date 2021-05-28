@@ -15,5 +15,10 @@ var swiper = new Swiper(".swiper-container", {
 });
 
 // ---------------\\
-//    Navbar
+//    Packs active
 // ---------------//
+var addclass = "hightlight";
+var $cols = $(".pack").click(function (e) {
+  $cols.removeClass(addclass);
+  $(this).addClass(addclass);
+});
